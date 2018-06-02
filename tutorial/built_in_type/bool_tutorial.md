@@ -19,3 +19,5 @@
     x > y   # int, float
     x >= y   # int, float
     x == y
+    
+by kidai
