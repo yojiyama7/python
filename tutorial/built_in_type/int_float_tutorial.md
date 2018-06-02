@@ -25,5 +25,5 @@
     abs(x)
     int(x)
     float(x)
-    math.floor(x)
-    math.ceil(x)
+    math.floor(x)   # import math
+    math.ceil(x)   # import math
