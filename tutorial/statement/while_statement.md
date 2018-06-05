@@ -1,6 +1,6 @@
 ### while statement (while文)
 
-- 繰り返し処理を行う制御文
+- 繰り返し処理を行う制御文
 
 - 繰り返しを始める時点で、繰り返す回数がわからない特に使うといい
 
@@ -16,4 +16,4 @@ while 条件式:
 
 - 単語
     - 条件式は、TrueまたはFalseを返す式で、`0 <10`や`all([True, False])`などである
-    - TrueとFalseについては`tutorial/built_in_type/bool_tutorial.md`を参照
+    - TrueとFalseについては`tutorial/built_in_type/bool_tutorial.md`を参照
