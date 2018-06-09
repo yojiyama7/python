@@ -9,9 +9,9 @@ strのリストの、頭文字を大文字にして、右揃えで表示する
 
 # to
 
-# >>>    text
-# >>>  python
-# >>> discord
-# >>> connect
-# >>>   clock
+# >>>    Text
+# >>>  Python
+# >>> Discord
+# >>> Connect
+# >>>   Clock
 ```
