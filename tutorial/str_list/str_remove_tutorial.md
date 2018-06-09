@@ -1,4 +1,4 @@
-### str_replace_tutorial
+### str_remove_tutorial
 
 #### question
 
