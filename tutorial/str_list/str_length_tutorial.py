@@ -1,4 +1,4 @@
-str_list = ["string", "integer", "list", "bool", "A", "brainf*cker"]
+words = ["string", "integer", "list", "bool", "A", "brainf*cker"]
 
-for s in str_list:
-    print("{}: {}".format(s, len(s)))
+for word in words:
+    print("{}: {}".format(word, len(word)))

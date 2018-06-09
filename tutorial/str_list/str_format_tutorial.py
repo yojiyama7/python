@@ -1,5 +1,5 @@
-str_list = ["text", "python", "discord", "connect", "clock"]
-x = max([len(s) for s in str_list])
+words = ["text", "python", "discord", "connect", "clock"]
+x = max([len(s) for s in words])
 
-for s in str_list:
-    print("{: >{}}".format(s.capitalize(), x))
+for word in words:
+    print("{: >{}}".format(word.capitalize(), x))

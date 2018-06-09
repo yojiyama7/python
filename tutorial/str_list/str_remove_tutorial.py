@@ -1,14 +1,14 @@
-str_list = ["", "defg", "hijklmn", "", ""]
+words = ["", "defg", "hijklmn", "", ""]
 
-while "" in str_list:
-    str_list.remove("")
+while "" in words:
+    words.remove("")
 
-print(str_list)
+print(words)
 
-# str_list = ["", "defg", "hijklmn", "", ""]
+# words = ["", "defg", "hijklmn", "", ""]
 #
-# empty_str_count = str_list.count("")
+# empty_str_count = words.count("")
 # for i in range(empty_str_count):
-#     str_list.remove("")
+#     words.remove("")
 #
-# print(str_list)
+# print(words)
