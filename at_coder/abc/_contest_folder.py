@@ -1,17 +1,27 @@
 import os.path
 
-# abs_path = os.path.dirname(os.path.abspath(__file__))
-# def rel_path(path):
-# 	return abs_path + "/" + path
+CONTEST_NAME_FORMAT = "abc_{:0>3}"
+FILE_NAME_FORMAT = "{}_.py"
+FILE_NAMES = "abcdef"
+DEFAULT_TEXT = ""
 
-contest_num = input("abcの番号: ")
-contest_name = "abc_{:0>3}".format(contest_num)
-if contest_num == "":
-	print("入力してください")
-elif os.path.isdir(contest_name):
-	print("その番号はすでに存在します")
-else:
+def input_contest_name():
+	num = input("abcの番号: ")
+	name = CONTEST_NAME_FORMAT.format(num)
+	if num == "":
+		print("入力してください")		
+	elif os.path.isdir(name):
+		print("その番号はすでに存在します")
+	else:
+		return name
+def mk_abc_dir(contest_name):
 	os.mkdir(contest_name)
-	for c in "abcdef":
-		with open("{}/{}_.py".format(contest_name, c), "w", encoding="utf-8") as f:
-			f.write("")
+	for file_name in FILE_NAMES:
+		with open("{}/".format(contest_name) + FILE_NAME_FORMAT.format(file_name), "w", encoding="utf-8") as f:
+			f.write(DEFAULT_TEXT)
+def create_folder():
+	name = input_contest_name()
+	if name:
+		mk_abc_dir(name)
+
+create_folder()
