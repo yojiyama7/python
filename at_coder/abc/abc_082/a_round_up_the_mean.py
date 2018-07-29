@@ -6,3 +6,5 @@ def round_up(num):
 ab = [int(m) for m in input().split(" ")]
 
 print(round_up(sum(ab) / 2))
+
+# print(-~sum(map(int,input().split()))//2)
