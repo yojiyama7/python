@@ -1,4 +1,3 @@
-
 ### string(文字列)の操作
 
 #### 作成
@@ -16,6 +15,7 @@
 
 #### 別str作成(変更)
 
+    str1 + str2
     str.replace()
     str.format()
     str.upper()
