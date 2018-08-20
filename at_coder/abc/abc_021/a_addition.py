@@ -1,8 +1,4 @@
-n = int(input())
+n_str = input()
+print(n_str+"\n1"*int(n_str))
 
-print(n//2+n%2)
-while not n < 2:
-	print(2)
-	n -= 2
-if n == 1:
-	print(1)
+# n=input();print(n+"\n1"*int(n))
