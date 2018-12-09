@@ -1,5 +1,3 @@
-from itertools import product
-
 N, K = map(int, input().split(" "))
 
 """
