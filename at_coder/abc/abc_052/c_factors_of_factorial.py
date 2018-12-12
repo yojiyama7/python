@@ -1,4 +1,31 @@
 # わがらんぞー
+# いけたぞー適当だぞー
+
+def is_prime(q):
+    q = abs(q)
+    if q == 2: return True
+    if q < 2 or q&1 == 0: return False
+    return pow(2, q-1, q) == 1
+
+N = int(input())
+
+p = [0]*(N+1)
+
+for i in range(2, N+1):
+    for j in range(2, i+1):
+        if is_prime(j) == False:
+            continue
+        while i%j==0:
+            i //= j
+            p[j] += 1
+        if i == 1:
+            break
+
+r = 1
+for q in p:
+    r = r * (q+1)
+print(r%(10**9+7))
+
 
 ################################
 #-------------------------------
