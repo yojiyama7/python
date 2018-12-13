@@ -1,3 +1,3 @@
-n, m = map(int, input().split(" "))
-uvl = [tuple(map(int, input().split(" "))) for _ in range(m)]
+N, M = map(int, input().split(" "))
+UVL = [tuple(map(int, input().split(" "))) for _ in range(m)]
 

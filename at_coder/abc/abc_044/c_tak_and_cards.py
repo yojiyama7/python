@@ -1,7 +1,10 @@
-from collections import Counter
-from itertools import combinations
-from statistics import mean
+# DPだよわからないよおおおお
+from functools import lru_cache
 
-n, a = map(int, input().split(" "))
-x = tuple(map(int, input().split(" ")))
+N, A = map(int, input().split(" "))
+X = list(map(int, input().split(" ")))
 
+X = [x-A for x in X]
+
+@lru_cache(maxsize=None)
+def dfs(n)
