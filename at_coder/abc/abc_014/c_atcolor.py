@@ -8,4 +8,3 @@ for a_i, b_i in ab:
 	l[b_i+1] -= 1
 
 print(max(accumulate(l)))
-
