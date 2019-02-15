@@ -1,13 +1,21 @@
+S = input()
+
 chars = "abcdefghijklmnopqrstuvwxyz"
+char_set = set(chars)
 
 if len(S) == 26:
-    
+    for i in range(len(S)-1, -1, -1):
+        x = chars.index(S[i])
+        y = sorted(set(chars[x+1:])-set(S[:i]))
+        # print(i, y)
+        if len(y):
+            print(S[:i]+y[0])
+            exit()
 else:
-    for c in chars:
-        if c not in S:
-            t = S + c
-            break
-    print(t)
+    t = sorted(set(chars)-set(S))[0]
+    print(S+t)
+    exit()
+print(-1)
 
 ################################
 
