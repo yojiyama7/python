@@ -1,16 +1,8 @@
 S = input()
 
-t = [set(s) for s in S]
+min_cost = 10**18
+for c in set(S):
+    cost = max(map(len, S.split(c)))
+    min_cost = min(min_cost, cost)
 
-for i in range(len(S)):
-    print(t)
-    u = [t[j]|t[j+1] for j in range(len(t)-1)]
-    a = u[0]
-    for u_i in u[1:]:
-        a = a&u_i
-    print(u, a)
-    if len(a):
-        print(i)
-        exit()
-    t = u
-
+print(min_cost)
