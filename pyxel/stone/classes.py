@@ -40,6 +40,8 @@ class SurfaceImg:
 
     def draw(self, display_pos):
         pyxel.blt(*display_pos, self.img, *self.pos, *self.size, self.colkey)
+    def set_pos(self, pos, std_pos=(0, 0)):
+        std_pos = np.array(std_pos)
 
 
 class Part:
