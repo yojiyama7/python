@@ -1,21 +1,42 @@
 N, K = map(int, input().split(" "))
 A = list(map(int, input().split(" ")))
 
-l, r = 0, 0
-sum_num = A[0]
-point = 0
-while r < N:
-    # print(l, r, sum_num, point)
-    if sum_num >= K:
-        point += N-r
-        sum_num -= A[l]
-        l += 1
-    else:
-        r += 1
-        if r < N:
-            sum_num += A[r]
+right = 0
+count = 0
+sum_num = 0
+for left in range(N):
+    while right < N and sum_num < K:
+        sum_num += A[right]
+        right += 1
+    if sum_num < K:
+        break
+    count += N-right+1
+    sum_num -= A[left]
 
-print(point)
+print(count)
+
+################################
+
+# # AC
+
+# N, K = map(int, input().split(" "))
+# A = list(map(int, input().split(" ")))
+
+# l, r = 0, 0
+# sum_num = A[0]
+# point = 0
+# while r < N:
+#     # print(l, r, sum_num, point)
+#     if sum_num >= K:
+#         point += N-r
+#         sum_num -= A[l]
+#         l += 1
+#     else:
+#         r += 1
+#         if r < N:
+#             sum_num += A[r]
+
+# print(point)
 
 ################################
 
