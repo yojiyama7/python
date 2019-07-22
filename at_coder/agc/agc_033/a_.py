@@ -1,3 +1,16 @@
+# # コピペ
+# # 本来は何のためのモジュール?
+# from scipy.ndimage import distance_transform_cdt
+ 
+# h, w = map(int, input().split())
+# a = [list(input()) for _ in range(h)]
+# n = [[1 if x == "." else 0 for x in row] for row in a]
+ 
+# # cnt = distance_transform_cdt(n)
+# cnt = distance_transform_cdt(n, metric='taxicab')
+# print(cnt)
+# print(cnt.max())
+
 from collections import deque
  
 ADS = [(0, 1), (1, 0), (0, -1), (-1, 0)]
