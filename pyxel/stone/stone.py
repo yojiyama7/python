@@ -4,8 +4,6 @@ import numpy as np
 from classes import *
 from vector_two import Vector2 as V2
 
-
-
 WINDOW_WIDTH, WINDOW_HEIGHT = 192, 108
 WINDOW_TITLE                = "Stone"
 PYXEL_FILE_NAME             = "stone.pyxel"
