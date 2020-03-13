@@ -27,11 +27,7 @@ class App:
         pyxel.init(WINDOW_WIDTH, WINDOW_HEIGHT, caption=WINDOW_TITLE)
         pyxel.load(PYXEL_FILE_NAME)
 
-<<<<<<< HEAD
         # # # #
-=======
-        parts["stone_logo"].pos = np.array([WINDOW_WIDTH-38-4, 2])
->>>>>>> 4f11e43010625ce6ac6e9735beea9b36a9d4d972
 
         pyxel.run(self.update, self.draw)
 
@@ -40,13 +36,7 @@ class App:
         if pyxel.btnp(pyxel.KEY_Q):
             pyxel.quit()
 
-<<<<<<< HEAD
         # parts["stone_logo"].pos.y += 1
-=======
-        for part in parts.values():
-            part.pos = (part.pos + np.array([1, 1])) % np.array([WINDOW_WIDTH, WINDOW_HEIGHT])
-
->>>>>>> 4f11e43010625ce6ac6e9735beea9b36a9d4d972
 
     def draw(self):
         pyxel.cls(0)
