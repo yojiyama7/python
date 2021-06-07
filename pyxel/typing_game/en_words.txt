@@ -328,7 +328,7 @@ charm,チャーム
 chase,追跡
 cheap,安いです
 cheat,カンニング
-check[cheque],チェック[チェック]
+check,チェック
 cheek,頬
 cheer,応援
 cheerful,陽気な
@@ -812,7 +812,7 @@ garage,ガレージ
 garden,庭園
 garment,衣服
 gas,ガス
-gasoline[petrol],ガソリン[ガソリン]
+gasoline,ガソリン
 gate,ゲート
 gather,ギャザー
 general,一般

@@ -22,11 +22,6 @@ class App:
 
         pyxel.playm(0, loop=True)
 
-        # print(list(pyxel.music(0).ch0))
-        # print(list(pyxel.music(0).ch1))
-        # print(list(pyxel.music(0).ch2))
-        # print(list(pyxel.music(0).ch3))
-
         pyxel.run(self.update, self.draw)
 
     def update(self):
