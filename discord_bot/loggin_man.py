@@ -32,12 +32,14 @@ bot = discord.Client()
 async def on_ready():
     print('loggined')
 
-def add_log(msg):
+def add_log(msg: discord.Message):
     args = msg.content.split()
     # task = Task(msg.created_at, *args)
     with open(LOG_FILE, 'a', encoding="utf=8") as f:
-        writer = csv.writer(f)
-        writer.writerow([datetime.datetime.now().strftime(TIME_FORMAT)] + ['_'.join(args)])
+        writer = csv.writer(f, lineterminator='\n')
+        row = [datetime.datetime.now().strftime(TIME_FORMAT)] + ['_'.join(args)]
+        print(row)
+        writer.writerow(row)
         # writer.writerow([msg.created_at.strftime(TIME_FORMAT)] + args)
 
 @bot.event
