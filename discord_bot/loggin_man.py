@@ -38,7 +38,7 @@ def add_log(msg: discord.Message):
     with open(LOG_FILE, 'a', encoding="utf=8") as f:
         writer = csv.writer(f, lineterminator='\n')
         row = [datetime.datetime.now().strftime(TIME_FORMAT)] + ['_'.join(args)]
-        print(row)
+        # print(row)
         writer.writerow(row)
         # writer.writerow([msg.created_at.strftime(TIME_FORMAT)] + args)
 
